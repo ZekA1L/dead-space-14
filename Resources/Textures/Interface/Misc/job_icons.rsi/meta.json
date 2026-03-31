@@ -257,6 +257,12 @@
             "name": "ERT"
         },
         {
+            "name": "shadowling_Icon"
+        },
+        {
+            "name": "shadowling_Icon2"
+        },
+        {
             "name": "ERTLeader"
         }
     ]
