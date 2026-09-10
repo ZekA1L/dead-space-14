@@ -4,8 +4,6 @@ using Content.Shared.DeadSpace.Implants;
 using Content.Shared.DeadSpace.Weapons.Smart;
 using Content.Shared.Weapons.Ranged.Events;
 using Robust.Shared.GameObjects;
-using Robust.Shared.Physics.Components;
-using Robust.Shared.Physics.Systems;
 using Robust.Shared.Timing;
 
 namespace Content.Server.DeadSpace.Weapons.Smart;
@@ -13,7 +11,6 @@ namespace Content.Server.DeadSpace.Weapons.Smart;
 public sealed class SmartWeaponServerSystem : EntitySystem
 {
     [Dependency] private readonly IGameTiming _gameTiming = default!;
-    [Dependency] private readonly SharedPhysicsSystem _physics = default!;
 
     public override void Initialize()
     {
@@ -51,7 +48,6 @@ public sealed class SmartWeaponServerSystem : EntitySystem
             chasing.NextImpulseTime = _gameTiming.CurTime + TimeSpan.FromSeconds(component.MagnetismDelay);
             chasing.StopAtTarget = false;
             chasing.RotateWithImpulse = component.MagnetismRotateWithImpulse;
-            chasing.MagnetismDelay = component.MagnetismDelay;
         }
     }
 }

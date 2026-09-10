@@ -109,27 +109,10 @@ public sealed class ChasingWalkSystem : VirtualController
             angleToChange += Angle.FromDegrees(360);
 
         // DS14-start
-        var currentMaxAngle = component.MaxAngleVectorChangePerImpulse;
-        if (component.EnableRampUp)
-        {
-            var elapsed = _gameTiming.CurTime - component.StartTime;
-            var delay = TimeSpan.FromSeconds(component.MagnetismDelay);
-            var rampTime = component.MagnetismRampUpTime;
-
-            if (elapsed < delay)
-            {
-                currentMaxAngle = Angle.Zero;
-            }
-            else
-            {
-                var rampElapsed = (elapsed - delay).TotalSeconds;
-                var rampFactor = rampTime > 0 ? Math.Clamp((float)(rampElapsed / rampTime), 0f, 1f) : 1f;
-                currentMaxAngle = component.MaxAngleVectorChangePerImpulse * rampFactor;
-            }
-        }
+        angleToChange = Math.Clamp(angleToChange,
+            -component.MaxAngleVectorChangePerImpulse,
+            component.MaxAngleVectorChangePerImpulse);
         // DS14-end
-
-        angleToChange = Math.Clamp(angleToChange, -currentMaxAngle, currentMaxAngle);
 
         var newDirection = currentDirection.ToAngle() + angleToChange;
 

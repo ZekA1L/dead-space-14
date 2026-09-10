@@ -360,19 +360,19 @@ public sealed class SmartWeaponSystem : EntitySystem
 
     private void LoadTextures(SmartWeaponComponent smartWeapon)
     {
-        if (_innerRingTexture == null && smartWeapon.CrosshairInnerTexture != null)
+        if (_innerRingTexture == null)
             _innerRingTexture = _spriteSystem.Frame0(new SpriteSpecifier.Texture(smartWeapon.CrosshairInnerTexture));
 
-        if (_outerRingTexture == null && smartWeapon.CrosshairOuterTexture != null)
+        if (_outerRingTexture == null)
             _outerRingTexture = _spriteSystem.Frame0(new SpriteSpecifier.Texture(smartWeapon.CrosshairOuterTexture));
 
-        if (_cornerStickTexture == null && smartWeapon.CornerStickTexture != null)
+        if (_cornerStickTexture == null)
             _cornerStickTexture = _spriteSystem.Frame0(new SpriteSpecifier.Texture(smartWeapon.CornerStickTexture));
 
-        if (_crossTexture == null && smartWeapon.CrossTexture != null)
+        if (_crossTexture == null)
             _crossTexture = _spriteSystem.Frame0(new SpriteSpecifier.Texture(smartWeapon.CrossTexture));
 
-        if (_ammoDigitTextures[0] == null && smartWeapon.AmmoDigitsRsi != null)
+        if (_ammoDigitTextures[0] == null)
         {
             for (int i = 0; i < 10; i++)
             {
