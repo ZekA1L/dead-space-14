@@ -68,7 +68,7 @@
     ammoDigitsColor: "#ffba78"
     magnetismDelay: 0.01
     magnetismUpdateInterval: 0.002
-    magnetismMaxAngle: 4
+    magnetismMaxAngle: 5
     crosshairAlpha: 0.7
     cornerStickTexture: /Textures/_DeadSpace/Interface/SmartWeapon/corner_stick.png
     crossTexture: /Textures/_DeadSpace/Interface/SmartWeapon/cross.png
