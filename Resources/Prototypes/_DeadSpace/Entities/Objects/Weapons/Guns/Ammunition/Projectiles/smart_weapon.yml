@@ -13,3 +13,5 @@
     maxAngleVectorChangePerImpulse: 10
     impulseInterval: 0.05
     stopAtTarget: false
+  - type: TimedDespawn
+    lifetime: 3
