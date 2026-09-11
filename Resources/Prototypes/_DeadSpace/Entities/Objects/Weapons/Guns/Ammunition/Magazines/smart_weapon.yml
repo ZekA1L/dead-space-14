@@ -2,7 +2,7 @@
   parent: BaseMagazinePistolSubMachineGun
   id: MagazineSmartWeaponShingen
   name: магазин (9x19 мм Smart™)
-  description: Магазин на 30 патронов калибра 9x19 мм Smart™ с интегрированной системой сопряжения с имплантом «Смартлинк». Каждый патрон несёт микрочип коррекции траектории, позволяя оружию вести огонь с самонаведением. Собственность Cybersun Industries.
+  description: Магазин на 40 патронов калибра 9x19 мм Smart™ с интегрированной системой сопряжения с имплантом «Смартлинк». Каждый патрон несёт микрочип коррекции траектории, позволяя оружию вести огонь с самонаведением. Собственность Cybersun Industries.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeShingen
@@ -25,3 +25,5 @@
   - type: Tag
     tags:
       - MagazineSmartWeaponShingen
+  - type: BallisticAmmoProvider
+    capacity: 40
