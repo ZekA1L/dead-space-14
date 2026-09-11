@@ -8,6 +8,7 @@
     proto: CartridgeShingen
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/bullet_insert.ogg
+    capacity: 40
   - type: Sprite
     scale: 1, 1
     sprite: _DeadSpace/Objects/Weapons/Guns/Ammunition/Magazine/Smart/shingen.rsi
@@ -25,5 +26,3 @@
   - type: Tag
     tags:
       - MagazineSmartWeaponShingen
-  - type: BallisticAmmoProvider
-    capacity: 40
