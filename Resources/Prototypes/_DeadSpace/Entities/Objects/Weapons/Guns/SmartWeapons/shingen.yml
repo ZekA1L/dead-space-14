@@ -21,7 +21,7 @@
   - type: Gun
     minAngle: 21
     maxAngle: 32
-    fireRate: 6.5
+    fireRate: 7.5
     burstFireRate: 20
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
@@ -31,7 +31,7 @@
     - FullAuto
     - SemiAuto
     shotsPerBurst: 3
-    burstCooldown: 0.420
+    burstCooldown: 0.375
   - type: ItemSlots
     slots:
       gun_magazine:
