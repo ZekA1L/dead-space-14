@@ -7692,3 +7692,10 @@ Entries:
     message: Тюлени!!!!!
   - type: Fix
     message: Некоторые баги с ЦК, шаттлом АПБТ и доступами ID-карт.
+- id: 735
+  author: Manstari
+  time: '2026-09-12T13:25:22.012174+00:00'
+  pr: 2336
+  changes:
+  - type: Fix
+    message: Отображение псевдонима в манифестах
